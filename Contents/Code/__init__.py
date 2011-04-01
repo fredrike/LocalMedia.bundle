@@ -166,6 +166,12 @@ def FindSubtitles(part):
   for p in os.listdir(path):
     pathFiles[p] = p
 
+	#Support for global sub dir.
+  if Prefs["enableSubDir"]:
+    Log("Searching %s for subs aswell." % Prefs["subDir"])
+    for p in os.listdir(Prefs["subDir"]):
+      pathFiles[p] = p
+
   # Start with the existing languages.
   lang_sub_map = {}
   for lang in part.subtitles.keys():

@@ -1,0 +1,14 @@
+[
+        {
+                "id": "enableSubDir",
+                "label": "Global subtitle dir support",
+                "type": "bool",
+								"default": "false"
+        },
+        {
+                "id": "subDir",
+                "label": "Directory containing subtitles",
+                "type": "text",
+                "default": ""
+        }        
+]
